@@ -35,22 +35,22 @@ export const options = {
 const BarChart = ({ deviceItem }) => {
 
   let label = []
-  let co2 = []
-  let dust = []
+  // let co2 = []
+  // let dust = []
   let humidity = []
   let temperature = []
   deviceItem?.forEach(element => {
     label.push(iDate(element?.at, '{j}/{n}/{f}, {h}:{m} '))
-    co2.push(element?.co2)
-    dust.push(element?.dust)
+    // co2.push(element?.co2)
+    // dust.push(element?.dust)
     humidity.push(element?.humidity)
     temperature.push(element?.temperature)
   });
   label = label.slice(label?.length - 11, label?.length - 1).reverse()
 
-  co2 = co2.slice(co2?.length - 11, co2?.length - 1).reverse()
+  // co2 = co2.slice(co2?.length - 11, co2?.length - 1).reverse()
 
-  dust = dust.slice(dust?.length - 11, dust?.length - 1).reverse()
+  // dust = dust.slice(dust?.length - 11, dust?.length - 1).reverse()
 
   humidity = humidity.slice(humidity?.length - 11, humidity?.length - 1).reverse()
 
@@ -72,8 +72,8 @@ const BarChart = ({ deviceItem }) => {
 
   // return <Bar options={options} data={data} />
   return (
-    <div style={{ display: 'flex', flexWrap: 'wrap', maxHeight:'100vh' }}>
-      <Bar
+    <div style={{  maxHeight:'100vh' }}>
+      {/* <Bar
         style={{ maxWidth: '50%', maxHeight:'50%' }}
         data={{
           labels: label,
@@ -94,8 +94,8 @@ const BarChart = ({ deviceItem }) => {
             text: "Statistics of CO2"
           }
         }}
-      />
-      <Bar
+      /> */}
+      {/* <Bar
         style={{ maxWidth: '50%', maxHeight:'50%'  }}
         data={{
           labels: label,
@@ -116,32 +116,33 @@ const BarChart = ({ deviceItem }) => {
             text: "Statistics of CO2"
           }
         }}
-      />
+      /> */}
       <Bar
-        style={{ maxWidth: '50%', maxHeight:'50%' }}
-        data={{
-          labels: label,
-          datasets: [
-            {
-              label: "Độ ẩm",
-              backgroundColor: [
-                "#FFFDA2",
-              ],
-              data: humidity
-            }
-          ]
-        }}
-        options={{
-          legend: { display: false },
+          style={{ maxWidth: '80%', maxHeight:'50%', marginLeft:'124px' }}
+          data={{
+            labels: label,
+            datasets: [
+              {
+                label: "Độ ẩm",
+                backgroundColor: [
+                  "#FFFDA2",
+                ],
+                data: humidity
+              }
+            ]
+          }}
+          options={{
+            legend: { display: false },
 
-          title: {
-            display: true,
-            text: "Statistics of CO2"
-          }
-        }}
-      />
+            title: {
+              display: true,
+              text: "Statistics of CO2"
+            }
+          }}
+        />
+       
       <Bar
-        style={{ maxWidth: '50%', maxHeight:'51%' }}
+        style={{ maxWidth: '80%', maxHeight:'51%', marginLeft:'124px'}}
         data={{
           labels: label,
           datasets: [

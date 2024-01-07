@@ -102,7 +102,7 @@ const NearestCityInfoImpl = () => {
 
   return (
     <div className='aqi-overview'>
-      <OverViewSumary style={{background:"linear-gradient(135deg, rgb(70, 35, 224) 0%,rgb(45, 253, 249) 100%)"}} props={nearestCity?.current?.pollution?.aqius}>
+      {/* <OverViewSumary style={{background:"linear-gradient(135deg, rgb(70, 35, 224) 0%,rgb(45, 253, 249) 100%)"}} props={nearestCity?.current?.pollution?.aqius}>
         <AqiValueWrapper>
           <AqiBox props={nearestCity?.current?.pollution?.aqius}>
             <AqiUnit>US AQI</AqiUnit>
@@ -118,7 +118,7 @@ const NearestCityInfoImpl = () => {
 
           <img src={face} alt="img" width={116} height={116} />
         </AqiValueWrapper>
-      </OverViewSumary>
+      </OverViewSumary> */}
       <OverViewDetail>
         <OverViewSectionTitle>Tổng quan</OverViewSectionTitle>
         <OverViewTittle>Chất lượng không khí hiện tại gần {nearestCity?.city || "Hanoi"}, {nearestCity?.country || "Vietnam"} như thế nào?</OverViewTittle>

@@ -89,10 +89,10 @@ export default function DeviceDetail({ item, info }) {
 
         <TableDetail>
           <tbody>
-            <TableWeatherTr style={{ background: '#BED6E3' }}>
+            {/* <TableWeatherTr style={{ background: '#BED6E3' }}>
             <TableWeatherTd  >Nồng độ CO2</TableWeatherTd>
             <TableWeatherTd style={{ fontWeight: 600, borderRadius: '0 0.625rem  0.625rem 0' }}>{item?.stateHistory[item.stateHistory.length - 2]?.co2}</TableWeatherTd>
-          </TableWeatherTr>
+          </TableWeatherTr> */}
             <TableWeatherTr>
               <TableWeatherTd>Nhiệt độ</TableWeatherTd>
               <TableWeatherTd
@@ -115,10 +115,10 @@ export default function DeviceDetail({ item, info }) {
                 {item?.stateHistory[item.stateHistory.length - 2]?.humidity}
               </TableWeatherTd>
             </TableWeatherTr>
-            <TableWeatherTr>
+            {/* <TableWeatherTr>
             <TableWeatherTd >Độ bụi</TableWeatherTd>
             <TableWeatherTd style={{ fontWeight: 600, borderRadius: '0 0.625rem  0.625rem 0' }}>{item?.stateHistory[item.stateHistory.length - 2]?.dust}</TableWeatherTd>
-          </TableWeatherTr>
+          </TableWeatherTr> */}
           </tbody>
         </TableDetail>
       </div>
