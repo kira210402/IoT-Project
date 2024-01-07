@@ -35,18 +35,18 @@ const CardDevice = ({ item }) => {
                       getDeviceItemById(item?._id)
                       setOpenModal(true)
                     }
-                    }><Edit2 /></div>
+                    }>Sửa</div>
                 </div>
               </div><br />
               <div className="containerDevice">
                 <div className="interior">
-                  <div className="btn" style={{ width: 'fit-content' }} onClick={() => deleteDevice(item?._id)}><Trash /></div>
+                  <div className="btn" style={{ width: 'fit-content' }} onClick={() => deleteDevice(item?._id)}>Xóa</div>
                 </div>
               </div>
               <br />
               <div className="containerDevice">
                 <div className="interior">
-                  <div className="btn" style={{ width: 'fit-content' }} onClick={() => window.location.replace(`/devices/${item?._id}`)}><Eye /></div>
+                  <div className="btn" style={{ width: 'fit-content' }} onClick={() => window.location.replace(`/devices/${item?._id}`)}>Chi tiết</div>
                 </div>
               </div>
             </div>

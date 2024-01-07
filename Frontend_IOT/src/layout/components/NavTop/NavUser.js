@@ -3,7 +3,7 @@ import React, { useCallback, useState } from 'react';
 import { LogOut, User } from 'react-feather';
 import { useNavigate } from 'react-router';
 import tw, { styled } from 'twin.macro';
-import avatarDefault from '../../../assets/avatar_default.png';
+import avatarDefault from '../../../assets/avatar_default.jpg';
 import DarkMode from '../../../ModeScreen/DarkMode';
 import './style.css'
 import useAuthen from '../../../hooks/useAuthen'
