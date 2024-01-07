@@ -30,8 +30,9 @@ const WorldMapImpl = () => {
   const { geocodingCity } = useMapContext();
    // console.log(geocodingCity.length)
   const [viewport, setViewport] = useState({
-    width: "50%",
-    height: '805px',
+    width: "60%",
+    height: '300px',
+    // marginLeft: ' 100px ',
     latitude: 21.437,
     longitude: 105.123,
     zoom: 4
@@ -79,11 +80,14 @@ const WorldMapImpl = () => {
   return (
     <PageContainer>
       <HeaderContainer>
-        <Header className='headerPage' id='headerPage'>Khám phá chất lượng không khí bất kỳ đâu trên thế giới</Header>
+        <Header className='headerPage' id='headerPage'>Chất lượng không khí</Header>
         {/* <SearchBar placeholder="   Your country, city or location ..." />
         <Search style={{ position: 'absolute', right: 0, marginRight: '6.2rem', background: "#fff" }} /> */}
       </HeaderContainer>
-      <div style={{ display: 'flex', gap: '50px' }}>
+      <div >
+        <NearestCityInfo  />
+
+        <div  style={{display:"flex", justifyContent:"center"}} >
         <ReactMapGL
           ref={mapRef}
           {...viewport}
@@ -126,8 +130,7 @@ const WorldMapImpl = () => {
           />
           <FullscreenControl style={fullscreenControlStyle} />
         </ReactMapGL>
-        <br />
-        <NearestCityInfo />
+        </div>
       </div>
     </PageContainer>
   )
