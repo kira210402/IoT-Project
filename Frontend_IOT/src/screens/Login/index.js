@@ -68,22 +68,24 @@ const LoginImpl = () => {
               handleLogin(username, password)
             }}
                    className="sign-in-form">
-              <h2 className="title">Sign in</h2>
-              <div className="input-field">
-                <User style={{ placeSelf: 'center' }} />
-                <input type="text" placeholder="Username" onChange={(e) => setUsername(e.target.value)} value={username} />
+              <h2 className="title">Đăng nhập</h2>
+              <div className="input-wrap-field">
+                {/* <User style={{ placeSelf: 'center' }} /> */}
+              <div>Tài Khoản</div>
+                <input className="input-field" type="text" placeholder="Username" onChange={(e) => setUsername(e.target.value)} value={username} />
               </div>
-              <div className="input-field">
-                <Lock style={{ placeSelf: 'center' }} />
-                <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} value={password} />
+              <div className="input-wrap-field" >
+                <div>Mật khẩu</div>
+                {/* <Lock style={{ placeSelf: 'center' }} /> */}
+                <input className="input-field" type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} value={password} />
               </div>
-              <input type="submit" value="Đăng Nhập" className="btn solid" />
+              <input  type="submit" value="Đăng Nhập" className="btn solid input-field-btn" />
             </form>
 
-            <span><hr/></span>
+            {/* <span><hr/></span> */}
             <button className="btn_signup" onClick={()=> setShow(true)}>Tạo tài khoản mới</button>
 
-            <Dialog   onClose={()=> setShow(false)} open={show}>
+            <Dialog onClose={()=> setShow(false)} open={show} className='form-sign-up'>
               <DialogTitle >
                 Đăng Ký
                 <IconButton
@@ -104,9 +106,9 @@ const LoginImpl = () => {
                 handleSignup(username, password)
               }}>
                 <DialogContent dividers>
-                  <DialogContentText>
+                  {/* <DialogContentText>
                     Vui lòng hoàn thành thông tin bên dưới :
-                  </DialogContentText>
+                  </DialogContentText> */}
                   <TextField margin="normal" variant="standard" id="username" label="Username" type="text"
                              fullWidth
                              onChange={(e) => setUsername(e.target.value)} value={username}
