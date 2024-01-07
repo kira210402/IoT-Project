@@ -1,7 +1,7 @@
 const navTopConfigs = [
     {
-        id: "World Air Quality",
-        name:"World Air Quality",
+        id: "Home",
+        name:"Home",
         navLink:"/",
         item: []
     },

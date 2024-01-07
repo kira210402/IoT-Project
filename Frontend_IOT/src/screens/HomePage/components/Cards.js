@@ -5,7 +5,7 @@ import CardItem from './CardItem';
 function Cards() {
   return (
     <div className='cards'>
-      <h1>Hít thở không khí sạch hơn!</h1>
+      {/* <h1>Hít thở không khí sạch hơn!</h1>
       <h3>Bảo vệ không khí của bạn mọi lúc, mọi nơi</h3>
       <div className='cards__container'>
         <div className='cards__wrapper'>
@@ -52,7 +52,7 @@ function Cards() {
             
           </ul>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
