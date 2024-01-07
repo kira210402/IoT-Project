@@ -123,7 +123,7 @@ const BarChart = ({ deviceItem }) => {
           labels: label,
           datasets: [
             {
-              label: "Humidity",
+              label: "Độ ẩm",
               backgroundColor: [
                 "#FFFDA2",
               ],
@@ -146,7 +146,7 @@ const BarChart = ({ deviceItem }) => {
           labels: label,
           datasets: [
             {
-              label: "Temperature",
+              label: "Nhiệt độ",
               backgroundColor: [
                 "#BAFFB4",
               ],

@@ -11,8 +11,8 @@ const StatisticsImpl = () => {
     <>
       <NavTop />
       <div style={{ marginTop: '100px' }}>
-        <div style={{display:'flex', gap:'50px'}}>
-          <DeviceLocation data={device} />
+        <div style={{display:'flex', justifyContent:"center"}}>
+          {/* <DeviceLocation data={device} /> */}
           <DeviceDetail item={device} info={nearestCity} />
         </div>
         <BarChart deviceItem={device?.stateHistory} />

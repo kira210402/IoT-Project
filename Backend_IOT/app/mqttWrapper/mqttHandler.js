@@ -33,6 +33,14 @@ class MqttHandler {
             try {
                 let jsonMessage = JSON.parse(payload.toString());
                 console.log("jsonMessage: ", jsonMessage);
+                // const Humidity2 = jsonMessage.Humidity;
+                // if(Humidity2 >  100){
+                //     Humidity2 = Humidity2-100;
+                // }
+                // const Temperature2 = jsonMessage.Temperature;
+                // if (Temperature2 < 0){
+                //     Temperature2= -Temperature2;
+                // }
 
                 let device = await Device.findOne({ embedId: jsonMessage.EmbedId });
                 if (device) {

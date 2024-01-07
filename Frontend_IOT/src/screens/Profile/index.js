@@ -67,14 +67,14 @@ const ProfileImpl = () => {
               <Title1><Briefcase />&nbsp; &nbsp;Bạn làm gì ?</Title1>
               <Title3>Mô tả ngắn về bản thân , có thể bao gồm thông tin về nghề nghiệp, sở thích, kinh nghiệm, mục tiêu nghề nghiệp và nhiều thông tin khác.</Title3>
             </ImageContainer>
-            <MediaContainer>
+            {/* <MediaContainer>
               <Facebook />
               <Twitter />
               <GitHub />
               <Instagram />
               <Youtube />
               <Twitch />
-            </MediaContainer>
+            </MediaContainer> */}
             <ButtonContainer>
               {/*<ButtonTouch>*/}
               {/*  Manage your device*/}
@@ -84,7 +84,7 @@ const ProfileImpl = () => {
 
           <ImgCol>
             {/* <Avatar className='avatar' src="https://source.unsplash.com/MP0IUfwrn0A" alt="avt" /> */}
-            <ReactMapGL
+            {/* <ReactMapGL
               ref={mapRef}
               {...viewport}
               mapStyle="mapbox://styles/mapbox/streets-v11"
@@ -131,7 +131,7 @@ const ProfileImpl = () => {
                 showUserHeading={true}
                 auto
               />
-            </ReactMapGL>
+            </ReactMapGL> */}
           </ImgCol>
         </MainContainer>
 

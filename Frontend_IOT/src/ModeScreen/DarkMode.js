@@ -31,11 +31,12 @@ const DarkMode = () => {
         }
     };
     return (
-        <button
-            className={theme === "dark" ? clickedClass : ""}
-            id="darkMode"
-            onClick={(e) => switchTheme(e)}
-        ></button>
+        // <button
+        //     className={theme === "dark" ? clickedClass : ""}
+        //     id="darkMode"
+        //     onClick={(e) => switchTheme(e)}
+        // ></button>
+        <></>
     );
 }
 export default DarkMode

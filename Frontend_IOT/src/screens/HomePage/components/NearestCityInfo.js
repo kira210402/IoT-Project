@@ -102,7 +102,7 @@ const NearestCityInfoImpl = () => {
 
   return (
     <div className='aqi-overview'>
-      <OverViewSumary props={nearestCity?.current?.pollution?.aqius}>
+      <OverViewSumary style={{background:"linear-gradient(135deg, rgb(70, 35, 224) 0%,rgb(45, 253, 249) 100%)"}} props={nearestCity?.current?.pollution?.aqius}>
         <AqiValueWrapper>
           <AqiBox props={nearestCity?.current?.pollution?.aqius}>
             <AqiUnit>US AQI</AqiUnit>
